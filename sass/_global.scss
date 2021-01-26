@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-cod-gray);
+  font-family: 'Spartan', sans-serif;
+  min-height: 100vh;
+}
