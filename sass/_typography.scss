@@ -51,7 +51,7 @@ h2 {
   font-size: 0.9375rem;
   letter-spacing: -0.19px;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 1.125rem;
     letter-spacing: -0.22px;
   }

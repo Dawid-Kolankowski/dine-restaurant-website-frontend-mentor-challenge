@@ -85,7 +85,7 @@ h2 {
   letter-spacing: -0.19px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .text__body-primary {
     font-size: 1.125rem;
     letter-spacing: -0.22px;
@@ -156,7 +156,6 @@ h2 {
   max-width: 1440px;
   background-image: url(../images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0 auto;
   background-position: center top;
   text-align: center;
@@ -177,6 +176,7 @@ h2 {
     background-image: url(../images/homepage/hero-bg-desktop.jpg);
     text-align: left;
     padding-top: 4rem;
+    padding-left: 10.3125rem;
   }
 }
 

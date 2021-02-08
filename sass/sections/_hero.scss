@@ -35,7 +35,7 @@
     max-width: 1440px;
     background-image: url(../images/homepage/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
     margin: 0 auto;
     background-position: center top;
     text-align: center;
@@ -51,6 +51,7 @@
       background-image: url(../images/homepage/hero-bg-desktop.jpg);
       text-align: left;
       padding-top: 4rem;
+      padding-left: 10.3125rem;
     }
   }
 }
