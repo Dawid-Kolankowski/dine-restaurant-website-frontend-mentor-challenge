@@ -1,0 +1,56 @@
+.hero {
+  background-color: var(--color-cod-gray);
+
+  &__logo {
+    padding-bottom: 2rem;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 9.625rem;
+    }
+
+    & img {
+      height: 2rem;
+      width: auto;
+      @media screen and (min-width: 768px) {
+        height: 2.5rem;
+      }
+    }
+  }
+  &__heading {
+    padding-bottom: 2.25rem;
+  }
+  &__paragraph {
+    padding-bottom: 2.5rem;
+    max-width: 20.4375rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      max-width: 35.8125rem;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 0;
+    }
+  }
+  &__content-wrapper {
+    padding-top: 14.5rem;
+    max-width: 1440px;
+    background-image: url(../images/homepage/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    background-position: center top;
+    text-align: center;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 9.5rem;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/homepage/hero-bg-tablet.jpg);
+      padding-top: 23.5rem;
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/homepage/hero-bg-desktop.jpg);
+      text-align: left;
+      padding-top: 4rem;
+    }
+  }
+}

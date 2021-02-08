@@ -1,0 +1,19 @@
+.btn {
+  padding: 1.5rem 3.4375rem;
+  text-decoration: none;
+  display: inline-block;
+  &--light {
+    color: white;
+    border: 1px solid white;
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: var(--color-cod-gray);
+      font-weight: 600;
+    }
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}

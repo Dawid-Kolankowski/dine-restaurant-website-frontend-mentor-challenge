@@ -1,7 +1,7 @@
 *:root {
   --color-beaver: rgb(158, 127, 102);
-  --color-cod-gray: rgb(17, 17, 17);
-  --color-mirage: rgb(23, 25, 43);
+  --color-cod-gray: #111111;
+  --color-mirage: #17192b;
   --color-ebony-clay: rgb(36, 43, 55);
   --color-shuttle-gray: rgb(92, 103, 121);
 }
@@ -16,13 +16,14 @@ html {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-cod-gray);
+  background-color: #ffffff;
   font-family: 'Spartan', sans-serif;
   min-height: 100vh;
+  color: var(--color-ebony-clay);
 }
 
 h1 {
@@ -91,19 +92,113 @@ h2 {
   }
 }
 
-.text__body-primary--white {
-  color: white;
-}
-
-.text__body-primary--black {
-  color: var(--color-ebony-clay);
-}
-
 .text__body-secondary {
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.75rem;
   letter-spacing: -0.19px;
   color: white;
+}
+
+.text--white {
+  color: white;
+}
+
+.hero {
+  background-color: var(--color-cod-gray);
+}
+
+.hero__logo {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__logo {
+    padding-bottom: 9.625rem;
+  }
+}
+
+.hero__logo img {
+  height: 2rem;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__logo img {
+    height: 2.5rem;
+  }
+}
+
+.hero__heading {
+  padding-bottom: 2.25rem;
+}
+
+.hero__paragraph {
+  padding-bottom: 2.5rem;
+  max-width: 20.4375rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__paragraph {
+    max-width: 35.8125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__paragraph {
+    margin: 0 0;
+  }
+}
+
+.hero__content-wrapper {
+  padding-top: 14.5rem;
+  max-width: 1440px;
+  background-image: url(../images/homepage/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+  background-position: center top;
+  text-align: center;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 9.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content-wrapper {
+    background-image: url(../images/homepage/hero-bg-tablet.jpg);
+    padding-top: 23.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__content-wrapper {
+    background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    text-align: left;
+    padding-top: 4rem;
+  }
+}
+
+.btn {
+  padding: 1.5rem 3.4375rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--light {
+  color: white;
+  border: 1px solid white;
+}
+
+.btn--light:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--color-cod-gray);
+  font-weight: 600;
+}
+
+.btn:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
