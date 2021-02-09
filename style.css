@@ -277,4 +277,50 @@ h2 {
     padding-bottom: 0rem;
   }
 }
+
+.booking {
+  background-image: url(../images/homepage/ready-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.booking__content-wrapper {
+  max-width: 68.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .booking__content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking {
+    background-image: url(../images/homepage/ready-bg-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking {
+    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+  }
+}
+
+.booking__heading {
+  padding-bottom: 2.125rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .booking__heading {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+.booking {
+  background-image: url(../images/homepage/ready-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+
+  &__content-wrapper {
+    max-width: 68.75rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and(min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and(min-width: 768px) {
+    background-image: url(../images/homepage/ready-bg-tablet.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+  }
+
+  &__heading {
+    padding-bottom: 2.125rem;
+    @media screen and(min-width:1200px) {
+      padding: 0;
+    }
+  }
+}
