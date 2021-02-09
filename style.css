@@ -72,7 +72,7 @@ h2 {
 }
 
 .text__h3--slim {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -200,5 +200,81 @@ h2 {
 
 .btn:visited {
   text-decoration: none;
+}
+
+.footer {
+  background-color: var(--color-cod-gray);
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  letter-spacing: 2px;
+}
+
+.footer__content-wrapper {
+  color: white;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 4.875rem 1rem;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__content-wrapper {
+    display: flex;
+    text-align: left;
+    padding: 4.875rem 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__content-wrapper {
+    padding: 4.875rem 0;
+  }
+}
+
+.footer__text {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__logo {
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    padding-bottom: 0;
+    margin-right: 8.125rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    margin-right: 12.125rem;
+  }
+}
+
+.footer__contact {
+  padding-bottom: 2.875rem;
+}
+
+@media screen and (min-width: 880px) {
+  .footer__contact {
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__contact {
+    padding-bottom: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
