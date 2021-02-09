@@ -323,4 +323,89 @@ h2 {
     padding: 0;
   }
 }
+
+.info__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  max-width: 68.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .info__content-wrapper {
+    padding: 0;
+  }
+}
+
+.info__text {
+  padding-bottom: 5rem;
+}
+
+.info__top {
+  margin-top: -4.5rem;
+}
+
+.info__spacer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.info__heading {
+  padding-bottom: 1.625rem;
+}
+
+.info__image--top {
+  background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-width: 15.4375rem;
+  min-height: 25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info__image--top {
+    background-image: url(../images/homepage/enjoyable-place-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__image--top {
+    background-image: url(../images/homepage/enjoyable-place-desktop.jpg);
+  }
+}
+
+.info__image--bottom {
+  background-image: url(../images/homepage/locally-sourced-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  min-width: 15.4375rem;
+  min-height: 25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info__image--bottom {
+    background-image: url(../images/homepage/locally-sourced-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__image--bottom {
+    background-image: url(../images/homepage/locally-sourced-desktop.jpg);
+  }
+}
+
+.info__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__bottom .info__image {
+  order: -1;
+}
 /*# sourceMappingURL=style.css.map */
