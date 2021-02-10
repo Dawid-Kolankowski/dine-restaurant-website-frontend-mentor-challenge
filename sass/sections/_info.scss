@@ -1,4 +1,13 @@
 .info {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    background-position: top 6.25rem left -67vw, bottom 0 left 52vw;
+
+    background-image: url(../images/patterns/pattern-curve-top-right.svg),
+      url(../images/patterns/pattern-curve-top-left.svg);
+    background-repeat: no-repeat;
+  }
   &__content-wrapper {
     display: flex;
     flex-direction: column;
@@ -6,36 +15,75 @@
     max-width: 68.75rem;
     margin: 0 auto;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 6.0625rem;
+    }
+
     @media screen and (min-width: 1200px) {
       padding: 0;
     }
   }
 
+  // &__space__fill {
+  //   position: absolute;
+  //   display: none;
+
+  //   &--top {
+  //     @media screen and (min-width: 768px) {
+  //       display: block;
+  //       top: 6.25rem;
+  //       left: -68vw;
+  //     }
+  //   }
+  //   &--bottom {
+  //     @media screen and(min-width:768px) {
+  //       display: block;
+  //       bottom: 0;
+  //       right: -20rem;
+  //       width: 50rem;
+  //       height: 20rem;
+  //     }
+  //   }
+  // }
   &__text {
-    padding-bottom: 5rem;
+    padding-bottom: 5.5rem;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 7.5rem;
+    }
   }
   &__top {
     margin-top: -4.5rem;
+    @media screen and (min-width: 768px) {
+      margin-top: -6rem;
+    }
   }
   &__spacer {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
   }
   &__heading {
-    padding-bottom: 1.625rem;
+    padding-bottom: 1rem;
+  }
+  &__paragraph {
+    max-width: 28.5625rem;
+    margin: 0 auto;
   }
   &__image {
+    max-width: 35.8125rem;
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     &--top {
       background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-
       width: 100%;
       height: auto;
       min-width: 15.4375rem;
       min-height: 25rem;
       @media screen and (min-width: 768px) {
         background-image: url(../images/homepage/enjoyable-place-tablet.jpg);
+        min-height: 22.5rem;
       }
       @media screen and (min-width: 1200px) {
         background-image: url(../images/homepage/enjoyable-place-desktop.jpg);
@@ -52,6 +100,7 @@
       min-height: 25rem;
       @media screen and (min-width: 768px) {
         background-image: url(../images/homepage/locally-sourced-tablet.jpg);
+        min-height: 22.5rem;
       }
       @media screen and (min-width: 1200px) {
         background-image: url(../images/homepage/locally-sourced-desktop.jpg);
@@ -61,6 +110,7 @@
   &__bottom {
     display: flex;
     flex-direction: column;
+
     .info__image {
       order: -1;
     }

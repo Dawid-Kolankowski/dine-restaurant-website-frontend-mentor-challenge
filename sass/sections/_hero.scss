@@ -35,7 +35,6 @@
     max-width: 1440px;
     background-image: url(../images/homepage/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
-
     margin: 0 auto;
     background-position: center top;
     text-align: center;
@@ -46,6 +45,7 @@
     @media screen and (min-width: 768px) {
       background-image: url(../images/homepage/hero-bg-tablet.jpg);
       padding-top: 23.5rem;
+      padding-bottom: 13.5rem;
     }
     @media screen and (min-width: 1200px) {
       background-image: url(../images/homepage/hero-bg-desktop.jpg);

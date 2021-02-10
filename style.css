@@ -72,7 +72,7 @@ h2 {
 }
 
 .text__h3--slim {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.75rem;
   letter-spacing: 2px;
@@ -168,6 +168,7 @@ h2 {
   .hero__content-wrapper {
     background-image: url(../images/homepage/hero-bg-tablet.jpg);
     padding-top: 23.5rem;
+    padding-bottom: 13.5rem;
   }
 }
 
@@ -324,6 +325,18 @@ h2 {
   }
 }
 
+.info {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    background-position: top 6.25rem left -67vw, bottom 0 left 52vw;
+    background-image: url(../images/patterns/pattern-curve-top-right.svg), url(../images/patterns/pattern-curve-top-left.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 .info__content-wrapper {
   display: flex;
   flex-direction: column;
@@ -333,6 +346,12 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .info__content-wrapper {
+    padding: 0 6.0625rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .info__content-wrapper {
     padding: 0;
@@ -340,20 +359,43 @@ h2 {
 }
 
 .info__text {
-  padding-bottom: 5rem;
+  padding-bottom: 5.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info__text {
+    padding-bottom: 7.5rem;
+  }
 }
 
 .info__top {
   margin-top: -4.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .info__top {
+    margin-top: -6rem;
+  }
+}
+
 .info__spacer {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   padding-bottom: 2rem;
 }
 
 .info__heading {
-  padding-bottom: 1.625rem;
+  padding-bottom: 1rem;
+}
+
+.info__paragraph {
+  max-width: 28.5625rem;
+  margin: 0 auto;
+}
+
+.info__image {
+  max-width: 35.8125rem;
+  margin: 0 auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .info__image--top {
@@ -369,6 +411,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .info__image--top {
     background-image: url(../images/homepage/enjoyable-place-tablet.jpg);
+    min-height: 22.5rem;
   }
 }
 
@@ -391,6 +434,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .info__image--bottom {
     background-image: url(../images/homepage/locally-sourced-tablet.jpg);
+    min-height: 22.5rem;
   }
 }
 
