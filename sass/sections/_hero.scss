@@ -49,9 +49,12 @@
     }
     @media screen and (min-width: 1200px) {
       background-image: url(../images/homepage/hero-bg-desktop.jpg);
+      background-position: center bottom;
+      background-size: cover;
       text-align: left;
       padding-top: 4rem;
       padding-left: 10.3125rem;
+      padding-bottom: 12.375rem;
     }
   }
 }

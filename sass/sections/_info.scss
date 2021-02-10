@@ -8,6 +8,10 @@
       url(../images/patterns/pattern-curve-top-left.svg);
     background-repeat: no-repeat;
   }
+
+  @media screen and(min-width: 1200px) {
+    background-position: top 15.625rem left 0, bottom 0 right 0;
+  }
   &__content-wrapper {
     display: flex;
     flex-direction: column;
@@ -22,40 +26,36 @@
 
     @media screen and (min-width: 1200px) {
       padding: 0;
+      text-align: left;
     }
   }
 
-  // &__space__fill {
-  //   position: absolute;
-  //   display: none;
-
-  //   &--top {
-  //     @media screen and (min-width: 768px) {
-  //       display: block;
-  //       top: 6.25rem;
-  //       left: -68vw;
-  //     }
-  //   }
-  //   &--bottom {
-  //     @media screen and(min-width:768px) {
-  //       display: block;
-  //       bottom: 0;
-  //       right: -20rem;
-  //       width: 50rem;
-  //       height: 20rem;
-  //     }
-  //   }
-  // }
   &__text {
     padding-bottom: 5.5rem;
     @media screen and (min-width: 768px) {
       padding-bottom: 7.5rem;
     }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 5rem;
+    }
   }
   &__top {
+    display: flex;
+    flex-direction: column;
     margin-top: -4.5rem;
     @media screen and (min-width: 768px) {
       margin-top: -6rem;
+    }
+    .info__text {
+      padding-top: 4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7.5625rem;
+      margin-top: -4.375rem;
     }
   }
   &__spacer {
@@ -73,14 +73,21 @@
     max-width: 35.8125rem;
     margin: 0 auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-width: 15.4375rem;
+    min-height: 25rem;
+
+    @media screen and(min-width:1200px) {
+      max-width: 33.75rem;
+      margin: 0;
+      height: 45rem;
+    }
     &--top {
       background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: auto;
-      min-width: 15.4375rem;
-      min-height: 25rem;
+
       @media screen and (min-width: 768px) {
         background-image: url(../images/homepage/enjoyable-place-tablet.jpg);
         min-height: 22.5rem;
@@ -92,12 +99,7 @@
 
     &--bottom {
       background-image: url(../images/homepage/locally-sourced-mobile.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: auto;
-      min-width: 15.4375rem;
-      min-height: 25rem;
+
       @media screen and (min-width: 768px) {
         background-image: url(../images/homepage/locally-sourced-tablet.jpg);
         min-height: 22.5rem;
@@ -109,10 +111,21 @@
   }
   &__bottom {
     display: flex;
+
     flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: -5rem;
+    }
 
     .info__image {
       order: -1;
+      @media screen and(min-width: 1200px) {
+        order: 1;
+      }
     }
   }
 }

@@ -175,9 +175,12 @@ h2 {
 @media screen and (min-width: 1200px) {
   .hero__content-wrapper {
     background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    background-position: center bottom;
+    background-size: cover;
     text-align: left;
     padding-top: 4rem;
     padding-left: 10.3125rem;
+    padding-bottom: 12.375rem;
   }
 }
 
@@ -337,6 +340,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .info {
+    background-position: top 15.625rem left 0, bottom 0 right 0;
+  }
+}
+
 .info__content-wrapper {
   display: flex;
   flex-direction: column;
@@ -355,6 +364,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .info__content-wrapper {
     padding: 0;
+    text-align: left;
   }
 }
 
@@ -368,13 +378,35 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .info__text {
+    padding-bottom: 5rem;
+  }
+}
+
 .info__top {
+  display: flex;
+  flex-direction: column;
   margin-top: -4.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .info__top {
     margin-top: -6rem;
+  }
+}
+
+.info__top .info__text {
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .info__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7.5625rem;
+    margin-top: -4.375rem;
   }
 }
 
@@ -396,16 +428,24 @@ h2 {
   max-width: 35.8125rem;
   margin: 0 auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.info__image--top {
-  background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: auto;
   min-width: 15.4375rem;
   min-height: 25rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .info__image {
+    max-width: 33.75rem;
+    margin: 0;
+    height: 45rem;
+  }
+}
+
+.info__image--top {
+  background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
 }
 
 @media screen and (min-width: 768px) {
@@ -423,12 +463,6 @@ h2 {
 
 .info__image--bottom {
   background-image: url(../images/homepage/locally-sourced-mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  min-width: 15.4375rem;
-  min-height: 25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -449,7 +483,22 @@ h2 {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1200px) {
+  .info__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -5rem;
+  }
+}
+
 .info__bottom .info__image {
   order: -1;
+}
+
+@media screen and (min-width: 1200px) {
+  .info__bottom .info__image {
+    order: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
