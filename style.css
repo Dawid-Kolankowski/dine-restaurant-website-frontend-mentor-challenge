@@ -481,6 +481,7 @@ h2 {
 .info__bottom {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 @media screen and (min-width: 1200px) {
@@ -489,6 +490,46 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: -5rem;
+  }
+}
+
+.info__bottom__lines {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .info__bottom__lines {
+    display: block;
+    position: absolute;
+    top: 29%;
+    right: -2rem;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .info__bottom__lines {
+    display: block;
+    position: absolute;
+    top: 29%;
+    right: 4vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__bottom__lines {
+    display: block;
+    position: absolute;
+    top: 39%;
+    right: -1.75rem;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .info__bottom__lines {
+    display: block;
+    position: absolute;
+    top: 39%;
+    right: -6.75rem;
   }
 }
 

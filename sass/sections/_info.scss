@@ -111,16 +111,42 @@
   }
   &__bottom {
     display: flex;
-
     flex-direction: column;
-
+    position: relative;
     @media screen and (min-width: 1200px) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       margin-bottom: -5rem;
     }
+    &__lines {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 29%;
+        right: -2rem;
+      }
+      @media screen and (min-width: 880px) {
+        display: block;
+        position: absolute;
+        top: 29%;
+        right: 4vw;
+      }
+      @media screen and(min-width:1200px) {
+        display: block;
+        position: absolute;
+        top: 39%;
+        right: -1.75rem;
+      }
 
+      @media screen and(min-width:1340px) {
+        display: block;
+        position: absolute;
+        top: 39%;
+        right: -6.75rem;
+      }
+    }
     .info__image {
       order: -1;
       @media screen and(min-width: 1200px) {
