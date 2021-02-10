@@ -69,6 +69,7 @@ h2 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   letter-spacing: -0.22px;
+  padding-bottom: 0.8125rem;
 }
 
 .text__h3--slim {
@@ -350,7 +351,7 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
-  max-width: 68.75rem;
+  max-width: 69.375rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -396,8 +397,10 @@ h2 {
   }
 }
 
-.info__top .info__text {
-  padding-top: 4rem;
+@media screen and (min-width: 1200px) {
+  .info__top .info__text {
+    padding-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -430,6 +433,7 @@ h2 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   width: 100%;
   height: auto;
   min-width: 15.4375rem;
@@ -524,7 +528,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1350px) {
   .info__bottom__lines {
     display: block;
     position: absolute;
@@ -540,6 +544,135 @@ h2 {
 @media screen and (min-width: 1200px) {
   .info__bottom .info__image {
     order: 1;
+  }
+}
+
+.highlights {
+  background: var(--color-cod-gray);
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .highlights {
+    text-align: left;
+  }
+}
+
+.highlights__spacer {
+  padding-bottom: 2rem;
+}
+
+.highlights__paragraph {
+  max-width: 27.8125rem;
+  padding-bottom: 4rem;
+}
+
+.highlights__heading {
+  padding-bottom: 1.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .highlights__cards {
+    text-align: left;
+    width: 33.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .highlights__cards {
+    padding-top: 2.6rem;
+  }
+}
+
+.highlights__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights__card:not(:last-child) {
+  border-bottom: 1px solid var(--color-shuttle-gray);
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .highlights__card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.highlights__card__text {
+  max-width: 20.4375rem;
+  padding-bottom: 1.5rem;
+}
+
+.highlights__image {
+  width: 18.4375rem;
+  height: 14.3125rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+@media screen and (min-width: 350px) {
+  .highlights__image {
+    width: 20.4375rem;
+    height: 15.3125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .highlights__image {
+    width: 8rem;
+    height: 6rem;
+  }
+  .highlights__image::after {
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background-color: var(--color-beaver);
+    position: absolute;
+    z-index: 100;
+    top: 1.125rem;
+    left: 8rem;
+  }
+}
+
+.highlights__image--first {
+  background-image: url(../images/homepage/salmon-mobile.jpg);
+}
+
+.highlights__image--second {
+  background-image: url(../images/homepage/beef-mobile.jpg);
+}
+
+.highlights__image--third {
+  background-image: url(../images/homepage/chocolate-mobile.jpg);
+}
+
+.highlights__content-wrapper {
+  padding: 4.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .highlights__content-wrapper {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .highlights__content-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 12.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

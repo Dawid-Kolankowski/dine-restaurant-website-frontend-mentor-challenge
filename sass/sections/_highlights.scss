@@ -1,0 +1,102 @@
+.highlights {
+  background: var(--color-cod-gray);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+  &__spacer {
+    padding-bottom: 2rem;
+  }
+  &__paragraph {
+    max-width: 27.8125rem;
+    padding-bottom: 4rem;
+  }
+  &__heading {
+    padding-bottom: 1.625rem;
+  }
+  &__cards {
+    @media screen and(min-width: 768px) {
+      text-align: left;
+      width: 33.75rem;
+    }
+    @media screen and(min-width: 1200px) {
+      padding-top: 2.6rem;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-shuttle-gray);
+      margin-bottom: 1.5rem;
+    }
+
+    @media screen and(min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__text {
+      max-width: 20.4375rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__image {
+    width: 18.4375rem;
+    height: 14.3125rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    position: relative;
+
+    @media screen and(min-width: 350px) {
+      width: 20.4375rem;
+      height: 15.3125rem;
+    }
+    @media screen and(min-width: 768px) {
+      width: 8rem;
+      height: 6rem;
+
+      &::after {
+        content: '';
+        width: 2rem;
+        height: 1px;
+        background-color: var(--color-beaver);
+        position: absolute;
+        z-index: 100;
+        top: 1.125rem;
+        left: 8rem;
+      }
+    }
+    &--first {
+      background-image: url(../images/homepage/salmon-mobile.jpg);
+    }
+    &--second {
+      background-image: url(../images/homepage/beef-mobile.jpg);
+    }
+    &--third {
+      background-image: url(../images/homepage/chocolate-mobile.jpg);
+    }
+  }
+
+  &__content-wrapper {
+    padding: 4.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 69.375rem;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      padding: 6rem 0;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 12.5rem;
+    }
+  }
+}
