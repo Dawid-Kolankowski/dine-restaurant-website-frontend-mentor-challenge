@@ -712,6 +712,12 @@ h2 {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .events__text {
+    max-width: 28.5625rem;
+  }
+}
+
 .events__buttons {
   display: flex;
   flex-direction: column;
@@ -738,7 +744,6 @@ h2 {
   height: 1px;
   background-color: var(--color-beaver);
   position: absolute;
-  z-index: 100;
   bottom: 0.9375rem;
   left: 50%;
   transform: translate(-50%, 0);
