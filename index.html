@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <main>
@@ -116,47 +117,67 @@
 
       <section class="events">
         <div class="events__content-wrapper">
-          <div
-            id="image__family"
-            class="events__image events__image--family active"
-          ></div>
-          <div
-            id="image__special"
-            class="events__image events__image--special"
-          ></div>
-          <div
-            id="image__social"
-            class="events__image events__image--social"
-          ></div>
+          <div class="events__images">
+            <div
+              id="image__family"
+              class="events__image events__image--family active"
+            ></div>
+            <div
+              id="image__special"
+              class="events__image events__image--special"
+            ></div>
+            <div
+              id="image__social"
+              class="events__image events__image--social"
+            ></div>
+          </div>
+
           <div class="events__info">
             <div class="text__h3--slim events__buttons">
-              <button class="text__h3--slim active">FAMILY GATHERING</button>
-              <button class="text__h3--slim">SPECIAL EVENTS</button>
-              <button class="text__h3--slim">SOCIAL EVENTS</button>
+              <button id="button__family" class="text__h3--slim active">
+                FAMILY GATHERING
+              </button>
+              <button id="button__special" class="text__h3--slim">
+                SPECIAL EVENTS
+              </button>
+              <button id="button__social" class="text__h3--slim">
+                SOCIAL EVENTS
+              </button>
             </div>
-            <div class="events__text">
-              <h2 class="events__heading">Family Gathering</h2>
-              <p class="text__body-primary">
-                We love catering for entire families. So please bring everyone
-                along for a special meal with your loved ones. We’ll provide a
-                memorable experience for all.
-              </p>
+            <div class="events__texts">
+              <div id="text__family" class="events__text active">
+                <h2 class="events__heading">Family Gathering</h2>
+                <p class="text__body-primary">
+                  We love catering for entire families. So please bring everyone
+                  along for a special meal with your loved ones. We’ll provide a
+                  memorable experience for all.
+                </p>
+              </div>
+              <div id="text__special" class="events__text">
+                <h2 class="events__heading">Special Events</h2>
+                <p class="text__body-primary">
+                  Whether it’s a romantic dinner or special date you’re
+                  celebrating with others we’ll look after you. We’ll be sure to
+                  mark your special date with an unforgettable meal.
+                </p>
+              </div>
+              <div id="text__social" class="events__text">
+                <h2 class="events__heading">Social Events</h2>
+                <p class="text__body-primary">
+                  Are you looking to have a larger social event? No problem!
+                  We’re more than happy to cater for big parties. We’ll work
+                  with you to make your event a hit with everyone.
+                </p>
+              </div>
             </div>
+
             <div>
               <a class="btn btn--dark" href="./booking.html">BOOK A TABLE</a>
             </div>
           </div>
         </div>
       </section>
-      <!--       Family
-    Gathering Special Events Social Events Family Gathering We love catering for
-    entire families. So please bring everyone along for a special meal with your
-    loved ones. We’ll provide a memorable experience for all. Special Events
-    Whether it’s a romantic dinner or special date you’re celebrating with
-    others we’ll look after you. We’ll be sure to mark your special date with an
-    unforgettable meal. Social Events Are you looking to have a larger social
-    event? No problem! We’re more than happy to cater for big parties. We’ll
-    work with you to make your event a hit with everyone. Book a table  -->
+
       <section class="booking">
         <div class="booking__content-wrapper">
           <h2 class="text--white booking__heading">
