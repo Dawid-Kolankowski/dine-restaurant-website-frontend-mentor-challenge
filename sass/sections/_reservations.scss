@@ -1,13 +1,13 @@
 .reservations {
-  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-image: url(./images/booking/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 37.5rem;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/booking/hero-bg-tablet.jpg);
+    background-image: url(./images/booking/hero-bg-tablet.jpg);
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    background-image: url(./images/booking/hero-bg-desktop.jpg);
     min-height: 810px;
   }
 

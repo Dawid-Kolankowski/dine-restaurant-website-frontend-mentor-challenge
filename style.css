@@ -1,9 +1,9 @@
 *:root {
-  --color-beaver: rgb(158, 127, 102);
+  --color-beaver: #9e7f66;
   --color-cod-gray: #111111;
   --color-mirage: #17192b;
-  --color-ebony-clay: rgb(36, 43, 55);
-  --color-shuttle-gray: rgb(92, 103, 121);
+  --color-ebony-clay: #242b37;
+  --color-shuttle-gray: #5c6779;
 }
 
 html {
@@ -156,7 +156,7 @@ h2 {
 .hero__content-wrapper {
   padding-top: 14.5rem;
   max-width: 1440px;
-  background-image: url(../images/homepage/hero-bg-mobile.jpg);
+  background-image: url(./images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   margin: 0 auto;
   background-position: center top;
@@ -168,7 +168,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .hero__content-wrapper {
-    background-image: url(../images/homepage/hero-bg-tablet.jpg);
+    background-image: url(./images/homepage/hero-bg-tablet.jpg);
     padding-top: 23.5rem;
     padding-bottom: 13.5rem;
   }
@@ -176,7 +176,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .hero__content-wrapper {
-    background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    background-image: url(./images/homepage/hero-bg-desktop.jpg);
     background-position: center bottom;
     background-size: cover;
     text-align: left;
@@ -299,7 +299,7 @@ h2 {
 }
 
 .booking {
-  background-image: url(../images/homepage/ready-bg-mobile.jpg);
+  background-image: url(./images/homepage/ready-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 0;
@@ -324,13 +324,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .booking {
-    background-image: url(../images/homepage/ready-bg-tablet.jpg);
+    background-image: url(./images/homepage/ready-bg-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .booking {
-    background-image: url(../images/homepage/ready-bg-desktop.jpg);
+    background-image: url(./images/homepage/ready-bg-desktop.jpg);
   }
 }
 
@@ -351,7 +351,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .info {
     background-position: top 6.25rem left -67vw, bottom 0 left 52vw;
-    background-image: url(../images/patterns/pattern-curve-top-right.svg), url(../images/patterns/pattern-curve-top-left.svg);
+    background-image: url(./images/patterns/pattern-curve-top-right.svg), url(./images/patterns/pattern-curve-top-left.svg);
     background-repeat: no-repeat;
   }
 }
@@ -464,36 +464,36 @@ h2 {
 }
 
 .info__image--top {
-  background-image: url(../images/homepage/enjoyable-place-mobile.jpg);
+  background-image: url(./images/homepage/enjoyable-place-mobile.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .info__image--top {
-    background-image: url(../images/homepage/enjoyable-place-tablet.jpg);
+    background-image: url(./images/homepage/enjoyable-place-tablet.jpg);
     min-height: 22.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__image--top {
-    background-image: url(../images/homepage/enjoyable-place-desktop.jpg);
+    background-image: url(./images/homepage/enjoyable-place-desktop.jpg);
   }
 }
 
 .info__image--bottom {
-  background-image: url(../images/homepage/locally-sourced-mobile.jpg);
+  background-image: url(./images/homepage/locally-sourced-mobile.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .info__image--bottom {
-    background-image: url(../images/homepage/locally-sourced-tablet.jpg);
+    background-image: url(./images/homepage/locally-sourced-tablet.jpg);
     min-height: 22.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__image--bottom {
-    background-image: url(../images/homepage/locally-sourced-desktop.jpg);
+    background-image: url(./images/homepage/locally-sourced-desktop.jpg);
   }
 }
 
@@ -656,15 +656,15 @@ h2 {
 }
 
 .highlights__image--first {
-  background-image: url(../images/homepage/salmon-mobile.jpg);
+  background-image: url(./images/homepage/salmon-mobile.jpg);
 }
 
 .highlights__image--second {
-  background-image: url(../images/homepage/beef-mobile.jpg);
+  background-image: url(./images/homepage/beef-mobile.jpg);
 }
 
 .highlights__image--third {
-  background-image: url(../images/homepage/chocolate-mobile.jpg);
+  background-image: url(./images/homepage/chocolate-mobile.jpg);
 }
 
 .highlights__content-wrapper {
@@ -726,50 +726,50 @@ h2 {
 }
 
 .events__image--family {
-  background-image: url("../images/homepage/family-gathering-mobile.jpg");
+  background-image: url("./images/homepage/family-gathering-mobile.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .events__image--family {
-    background-image: url("../images/homepage/family-gathering-tablet.jpg");
+    background-image: url("./images/homepage/family-gathering-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .events__image--family {
-    background-image: url("../images/homepage/family-gathering-desktop.jpg");
+    background-image: url("./images/homepage/family-gathering-desktop.jpg");
   }
 }
 
 .events__image--special {
-  background-image: url("../images/homepage/special-events-mobile.jpg");
+  background-image: url("./images/homepage/special-events-mobile.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .events__image--special {
-    background-image: url("../images/homepage/special-events-tablet.jpg");
+    background-image: url("./images/homepage/special-events-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .events__image--special {
-    background-image: url("../images/homepage/special-events-desktop.jpg");
+    background-image: url("./images/homepage/special-events-desktop.jpg");
   }
 }
 
 .events__image--social {
-  background-image: url("../images/homepage/social-events-mobile.jpg");
+  background-image: url("./images/homepage/social-events-mobile.jpg");
 }
 
 @media screen and (min-width: 768px) {
   .events__image--social {
-    background-image: url("../images/homepage/social-events-tablet.jpg");
+    background-image: url("./images/homepage/social-events-tablet.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .events__image--social {
-    background-image: url("../images/homepage/social-events-desktop.jpg");
+    background-image: url("./images/homepage/social-events-desktop.jpg");
   }
 }
 
@@ -904,20 +904,20 @@ h2 {
 }
 
 .reservations {
-  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-image: url(./images/booking/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 37.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .reservations {
-    background-image: url(../images/booking/hero-bg-tablet.jpg);
+    background-image: url(./images/booking/hero-bg-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .reservations {
-    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    background-image: url(./images/booking/hero-bg-desktop.jpg);
     min-height: 810px;
   }
 }

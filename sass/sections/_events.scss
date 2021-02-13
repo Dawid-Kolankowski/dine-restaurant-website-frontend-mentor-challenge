@@ -1,10 +1,10 @@
 @mixin images($link) {
-  background-image: url('../images/homepage/#{$link}-mobile.jpg');
+  background-image: url('./images/homepage/#{$link}-mobile.jpg');
   @media screen and (min-width: 768px) {
-    background-image: url('../images/homepage/#{$link}-tablet.jpg');
+    background-image: url('./images/homepage/#{$link}-tablet.jpg');
   }
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/homepage/#{$link}-desktop.jpg');
+    background-image: url('./images/homepage/#{$link}-desktop.jpg');
   }
 }
 
