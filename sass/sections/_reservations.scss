@@ -1,0 +1,177 @@
+.reservations {
+  background-image: url(../images/booking/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 37.5rem;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/booking/hero-bg-tablet.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/booking/hero-bg-desktop.jpg);
+    min-height: 810px;
+  }
+
+  &__logo {
+    padding-bottom: 2.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+    & img {
+      width: 5.125rem;
+      height: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 4.0625rem;
+    }
+  }
+  &__heading {
+    margin-bottom: 1rem;
+  }
+  &__info {
+    margin-bottom: 5.6875rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 375px) {
+      max-width: 35.8125rem;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 27.8125rem;
+    }
+  }
+  &__button {
+    text-align: center;
+  }
+  &__content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    max-width: 1110px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      padding: 3.5rem 2.4375rem;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      padding: 0;
+      padding-top: 16.125rem;
+      text-align: left;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 0.5rem;
+  width: 100%;
+
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+
+  @media screen and (min-width: 350px) {
+    width: 20.4375rem;
+    padding: 2rem;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+    width: 34.0625rem;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 33.75rem;
+    margin-bottom: calc(100vh - 65.625rem);
+  }
+
+  &__input {
+    outline: none;
+    border: 0;
+    font-family: Spartan;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.225px;
+    border-bottom: 1px solid #8e8e8e;
+    color: var(--color-cod-gray);
+    opacity: 0.5;
+    padding-bottom: 1rem;
+
+    &--small {
+      width: 4.5625rem;
+
+      @media screen and (min-width: 768px) {
+        width: 5rem;
+        margin-left: 1rem;
+      }
+    }
+    &--big {
+      width: 5.5rem;
+
+      @media screen and (min-width: 768px) {
+        width: 6.0625rem;
+        margin-left: 1rem;
+      }
+    }
+    &:focus {
+      color: var(--color-cod-gray);
+      opacity: 1;
+      border-bottom: 1px solid var(--color-cod-gray);
+    }
+    &--group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (min-width: 768px) {
+        width: auto;
+      }
+    }
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-cod-gray);
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    display: flex;
+    padding: 0 1.875rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}

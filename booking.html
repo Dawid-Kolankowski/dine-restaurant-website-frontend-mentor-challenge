@@ -4,12 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="booking.js"></script>
   </head>
   <body>
-    Reservations We can’t wait to host you. If you have any special requirements
-    please feel free to call on the phone number below. We’ll be happy to
-    accommodate you. Name Email Pick a date Pick a time Make Reservation
-    Marthwaite, Sedbergh Cumbria +00 44 123 4567 Open Times Mon - Fri: 09:00 AM
-    - 10:00 PM Sat - Sun: 09:00 AM - 11:30 PM
+    <section class="reservations">
+      <div class="reservations__content-wrapper">
+        <a class="reservations__logo" href="./index.html"
+          ><img src="./images/logo.svg"
+        /></a>
+        <div class="reservations__info">
+          <h1 class="text--white reservations__heading">Reservations</h1>
+
+          <p class="text--white text__body-primary reservations__text">
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+          <div>
+            <a
+              class="btn btn--light reservations__button text__h3--slim"
+              href="./booking.html "
+              >RESERVE PLACE
+            </a>
+          </div>
+        </div>
+
+        <div class="form">
+          <input class="form__input mb-2" placeholder="Name" />
+          <input class="form__input mb-2" placeholder="Email" />
+          <div class="form__date">
+            Pick a date
+            <div class="form__input--group">
+              <input class="form__input form__input--small" placeholder="MM" />
+              <input class="form__input form__input--small" placeholder="DD" />
+              <input class="form__input form__input--big" placeholder="YYYY" />
+            </div>
+          </div>
+          <div class="form__date">
+            Pick a time
+            <div class="form__input--group">
+              <input class="form__input form__input--small" placeholder="09" />
+              <input class="form__input form__input--small" placeholder="00" />
+              <input class="form__input form__input--big" placeholder="AM" />
+            </div>
+          </div>
+          <div class="form__people">
+            <button id="minus" class="form__button">
+              <img src="./images/icons/icon-minus.svg" />
+            </button>
+            <div id="people__container">1 people</div>
+            <button id="plus" class="form__button">
+              <img src="./images/icons/icon-plus.svg" />
+            </button>
+          </div>
+
+          <a
+            class="btn btn--dark reservations__button text__h3--slim"
+            href="./booking.html"
+            >MAKE RESERVATION
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content-wrapper">
+        <div class="footer__logo"><img src="./images/logo.svg" /></div>
+        <div class="footer__text">
+          <p class="footer__contact">
+            MARTHWAITE, SEDBERGH<br />
+            CUMBRIA<br />
+            +00 44 123 4567
+          </p>
+          <p class="footer__times">
+            OPEN TIMES<br />
+            MON - FRI: 09:00 AM - 10:00 PM <br />SAT - SUN: 09:00 AM - 11:30 PM
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
